@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ecommers MariaferStore</title>
+
+  <style>
+    .card-img-top {
+      height: 450px;
+      object-fit: cover;
+    }
+    .product-card {
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MariaferStore</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto" id="navbarItems">
+        <li class="nav-item" id="btnAuthContainer">
+          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#authModal">
+            Iniciar sesión / Registrarse
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Bienvenidos a MariaferStore</h1>
+    <p class="lead">Tu tienda de confianza de Juegos navideños al mejor precio.</p>
+  </div>
+</header>
+
+<!-- PRODUCTOS -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">NUESTROS PRODUCTOS</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- PRODUCTO 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYZNcdKwsilacp7OV94yZWU6av52wqrjc7A&s" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Juguetes para los niños</h5>
+            <p>Precio</p>
+            <p class="fw-bold">S/. 99.90</p>
+            <button class="btn btn-primary agregarCarrito"
+              data-nombre="Juguetes para los niños"
+              data-precio="99.90"
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYZNcdKwsilacp7OV94yZWU6av52wqrjc7A&s">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBr51VMr7Vr5mg-HpwaJCCixEMTI6XxDpqpQ&s" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Juguetes para los niños</h5>
+            <p>Precio</p>
+            <p class="fw-bold">S/. 75.90</p>
+            <button class="btn btn-primary agregarCarrito"
+              data-nombre="Juguetes para los niños"
+              data-precio="75.90"
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBr51VMr7Vr5mg-HpwaJCCixEMTI6XxDpqpQ&s">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_690750-CBT81401650873_122024-O-juguete-de-peluche-al-por-mayor-de-muneco-de-nieve-navidad.webp" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Juguetes para los niños</h5>
+            <p>Precio</p>
+            <p class="fw-bold">S/. 97.90</p>
+            <button class="btn btn-primary agregarCarrito"
+              data-nombre="Juguetes para los niños"
+              data-precio="97.90"
+              data-img="https://http2.mlstatic.com/D_NQ_NP_690750-CBT81401650873_122024-O-juguete-de-peluche-al-por-mayor-de-muneco-de-nieve-navidad.webp">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 4 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjmMr8thv2kv3REDJVf4IqhIv9Dq08wt5sQ&s" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Juguetes para los niños</h5>
+            <p>Precio</p>
+            <p class="fw-bold">S/. 80.90</p>
+            <button class="btn btn-primary agregarCarrito"
+              data-nombre="Juguetes para los niños"
+              data-precio="80.90"
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjmMr8thv2kv3REDJVf4IqhIv9Dq08wt5sQ&s">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 5 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LhdiZe16wBv3ZkptaBQ9hwi3v0KP4bAsYg&s" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Juguetes para los niños</h5>
+            <p>Precio</p>
+            <p class="fw-bold">S/. 77.90</p>
+            <button class="btn btn-primary agregarCarrito"
+              data-nombre="Juguetes para los niños"
+              data-precio="77.90"
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LhdiZe16wBv3ZkptaBQ9hwi3v0KP4bAsYg&s">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 6 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQG1S-V1u_Ffocdgkz_eiRCUJaZOJywkkAA&s" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Juguetes para los niños</h5>
+            <p>Precio</p>
+            <p class="fw-bold">S/. 86.90</p>
+            <button class="btn btn-primary agregarCarrito"
+              data-nombre="Juguetes para los niños"
+              data-precio="86.90"
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQG1S-V1u_Ffocdgkz_eiRCUJaZOJywkkAA&s">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL LOGIN / REGISTRO -->
+<div class="modal fade" id="authModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Acceder a MariaferStore</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3">
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#loginTab">Iniciar Sesión</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#registerTab">Registrarse</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- LOGIN -->
+          <div class="tab-pane fade show active" id="loginTab">
+            <div class="d-grid mb-3">
+              <button id="googleLogin" class="btn btn-danger">
+                <i class="bi bi-google"></i> Iniciar sesión con Google
+              </button>
+            </div>
+
+            <form id="formLogin">
+              <div class="mb-3">
+                <label>Email</label>
+                <input type="email" id="loginEmail" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label>Contraseña</label>
+                <input type="password" id="loginPassword" class="form-control" required minlength="6">
+              </div>
+              <button class="btn btn-primary w-100">Iniciar Sesión</button>
+            </form>
+          </div>
+
+          <!-- REGISTER -->
+          <div class="tab-pane fade" id="registerTab">
+            <form id="formRegister">
+              <div class="mb-3">
+                <label>Nombre completo</label>
+                <input type="text" id="regNombre" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label>Email</label>
+                <input type="email" id="regEmail" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label>Contraseña</label>
+                <input type="password" id="regPassword" class="form-control" required minlength="6">
+              </div>
+              <button class="btn btn-primary w-100">Registrarse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 - MariaferStore Todos los derechos reservados.</p>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- FIREBASE AUTH -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+  import {
+    getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged,
+    createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile
+  } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+
+  import {
+    getFirestore, doc, setDoc, getDoc, collection, getDocs, addDoc
+  } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
+
+  // Configuración de Firebase (usa tu configuración actual)
+const firebaseConfig = {
+  apiKey: "AIzaSyAeegGlgMwIXlISMZ6rIQRXzzRcMryN5mQ",
+  authDomain: "ecommers-vi-a.firebaseapp.com",
+  projectId: "ecommers-vi-a",
+  storageBucket: "ecommers-vi-a.firebasestorage.app",
+  messagingSenderId: "991680745040",
+  appId: "1:991680745040:web:728345de8e2dfafffecb55",
+  measurementId: "G-3JYZEG43BR"
+};
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const provider = new GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: "select_account" });
+
+  const googleBtn = document.getElementById("googleLogin");
+  const navbarRight = document.getElementById("navbarItems");
+  const loginForm = document.getElementById("formLogin");
+  const registerForm = document.getElementById("formRegister");
+  const btnAuthContainer = document.getElementById("btnAuthContainer");
+
+  // Variables del carrito
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  // =======================
+  // 🛒 FUNCIONES DEL CARRITO
+  // =======================
+  
+  function guardarCarrito() {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }
+
+  function actualizarBurbujaCarrito() {
+    const contador = document.getElementById("contadorCarrito");
+    if (contador) {
+      const totalItems = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+      contador.textContent = totalItems;
+      contador.style.display = totalItems > 0 ? "inline" : "none";
+    }
+  }
+
+  function agregarAlCarrito(item) {
+    const existente = carrito.find(p => p.nombre === item.nombre);
+    if (existente) {
+      existente.cantidad += 1;
+    } else {
+      carrito.push({ ...item, cantidad: 1 });
+    }
+    guardarCarrito();
+    notificar(`"${item.nombre}" agregado al carrito`);
+    actualizarBurbujaCarrito();
+  }
+
+  // Asignar eventos a los botones de agregar carrito
+  document.querySelectorAll(".agregarCarrito").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const nombre = btn.getAttribute("data-nombre");
+      const precio = parseFloat(btn.getAttribute("data-precio"));
+      const img = btn.getAttribute("data-img");
+      agregarAlCarrito({ nombre, precio, imagen: img });
+    });
+  });
+
+  // =======================
+  // 📦 MOSTRAR PEDIDOS
+  // =======================
+  async function mostrarPedidosModal() {
+    const user = auth.currentUser;
+    if (!user) {
+      alert("Debes iniciar sesión.");
+      return;
+    }
+
+    const pedidosSnap = await getDocs(collection(db, "pedidos"));
+    const pedidos = [];
+    pedidosSnap.forEach(d => {
+      const data = d.data();
+      if (data.usuarioId === user.uid) pedidos.push(data);
+    });
+
+    const html = `
+      <div class="modal fade" id="pedidosModal" tabindex="-1">
+        <div class="modal-dialog modal-lg"><div class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">📦 Mis pedidos</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-body">
+            ${pedidos.length === 0
+              ? "<p class='text-center'>Aún no tienes pedidos.</p>"
+              : pedidos.map((p, idx) => `
+                  <div class="border rounded p-3 mb-3">
+                    <h6>Pedido #${idx + 1}</h6>
+                    <small class="text-muted">Fecha: ${new Date(p.fecha).toLocaleString()}</small>
+                    <ul class="list-group mt-2">
+                      ${p.productos.map(pr => `
+                        <li class="list-group-item d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <img src="${pr.imagen}" width="50" class="me-2 rounded">
+                            <span>${pr.nombre} x${pr.cantidad}</span>
+                          </div>
+                          <span>S/. ${(pr.precio * pr.cantidad).toFixed(2)}</span>
+                        </li>`).join("")}
+                    </ul>
+                    <p class="text-end fw-bold mt-2">Total: S/. ${p.total.toFixed(2)}</p>
+                  </div>`).join("")}
+          </div>
+          <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
+        </div></div>
+      </div>`;
+
+    const div = document.createElement("div");
+    div.innerHTML = html;
+    document.body.appendChild(div);
+    const modal = new bootstrap.Modal(div.querySelector("#pedidosModal"));
+    modal.show();
+    div.querySelector("#pedidosModal").addEventListener("hidden.bs.modal", () => div.remove());
+  }
+
+  // =======================
+  // 🛒 MOSTRAR CARRITO MODAL
+  // =======================
+  function mostrarCarritoModal() {
+    const total = carrito.reduce((a, b) => a + b.precio * b.cantidad, 0).toFixed(2);
+
+    const html = `
+    <div class="modal fade" id="carritoModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title">🛒 Tu carrito</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            ${carrito.length === 0 ? "<p>Tu carrito está vacío.</p>" : `
+            <table class="table align-middle">
+              <thead><tr><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th><th></th></tr></thead>
+              <tbody>
+                ${carrito.map((i, idx) => `
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img src="${i.imagen}" width="60" class="me-2 rounded">
+                        <span>${i.nombre}</span>
+                      </div>
+                    </td>
+                    <td>S/. ${i.precio.toFixed(2)}</td>
+                    <td>
+                      <div class="input-group input-group-sm" style="width:100px;">
+                        <button class="btn btn-outline-secondary btn-restar" data-idx="${idx}">-</button>
+                        <input type="text" class="form-control text-center" value="${i.cantidad}" readonly>
+                        <button class="btn btn-outline-secondary btn-sumar" data-idx="${idx}">+</button>
+                      </div>
+                    </td>
+                    <td>S/. ${(i.precio * i.cantidad).toFixed(2)}</td>
+                    <td><button class="btn btn-danger btn-sm btn-eliminar" data-idx="${idx}"><i class="bi bi-trash"></i></button></td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+            <p class="text-end fw-bold fs-5">Total: S/. ${total}</p>`}
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button class="btn btn-success" id="btnPagar">Proceder al Pago</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+
+    const div = document.createElement("div");
+    div.innerHTML = html;
+    document.body.appendChild(div);
+
+    const modal = new bootstrap.Modal(div.querySelector("#carritoModal"));
+    modal.show();
+
+    // Eventos de botones dentro del carrito
+    div.querySelectorAll(".btn-sumar").forEach(btn => {
+      btn.addEventListener("click", e => {
+        const idx = e.currentTarget.dataset.idx;
+        carrito[idx].cantidad++;
+        guardarCarrito();
+        actualizarBurbujaCarrito();
+        modal.hide();
+        mostrarCarritoModal();
+      });
+    });
+
+    div.querySelectorAll(".btn-restar").forEach(btn => {
+      btn.addEventListener("click", e => {
+        const idx = e.currentTarget.dataset.idx;
+        if (carrito[idx].cantidad > 1) carrito[idx].cantidad--;
+        else carrito.splice(idx, 1);
+        guardarCarrito();
+        actualizarBurbujaCarrito();
+        modal.hide();
+        mostrarCarritoModal();
+      });
+    });
+
+    div.querySelectorAll(".btn-eliminar").forEach(btn => {
+      btn.addEventListener("click", e => {
+        const idx = e.currentTarget.dataset.idx;
+        carrito.splice(idx, 1);
+        guardarCarrito();
+        actualizarBurbujaCarrito();
+        modal.hide();
+        mostrarCarritoModal();
+      });
+    });
+
+    // Botón pagar
+    div.querySelector("#btnPagar").addEventListener("click", async () => {
+      const user = auth.currentUser;
+      if (!user) {
+        alert("Debes iniciar sesión para pagar.");
+        modal.hide();
+        return;
+      }
+      if (carrito.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+      }
+
+      const total = carrito.reduce((a, b) => a + b.precio * b.cantidad, 0).toFixed(2);
+      await addDoc(collection(db, "pedidos"), {
+        usuarioId: user.uid,
+        nombreUsuario: user.displayName || "",
+        email: user.email,
+        productos: carrito,
+        total: parseFloat(total),
+        fecha: new Date().toISOString()
+      });
+
+      notificar("✅ Pedido registrado correctamente");
+      carrito = [];
+      guardarCarrito();
+      actualizarBurbujaCarrito();
+      modal.hide();
+    });
+
+    div.querySelector("#carritoModal").addEventListener("hidden.bs.modal", () => div.remove());
+  }
+
+  // =======================
+  // 🔔 NOTIFICACIONES
+  // =======================
+  function notificar(msg) {
+    const id = "toast-msg";
+    const ex = document.getElementById(id);
+    if (ex) ex.remove();
+    const div = document.createElement("div");
+    div.id = id;
+    div.style.position = "fixed";
+    div.style.bottom = "20px";
+    div.style.right = "20px";
+    div.style.zIndex = "2000";
+    div.innerHTML = `
+      <div class="toast align-items-center text-bg-dark border-0 show">
+        <div class="d-flex">
+          <div class="toast-body">${msg}</div>
+          <button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+      </div>`;
+    document.body.appendChild(div);
+    setTimeout(() => div.remove(), 2500);
+  }
+
+  // =======================
+  // 👤 AUTENTICACIÓN
+  // =======================
+  
+  function limpiarUsuarioNavbar() {
+    const info = document.getElementById("userInfo");
+    if (info) info.remove();
+  }
+
+  function cerrarModalAuth() {
+    const modal = bootstrap.Modal.getInstance(document.getElementById("authModal"));
+    modal?.hide();
+  }
+
+  async function crearUsuarioSiNoExiste(user) {
+    const refUser = doc(db, "usuarios", user.uid);
+    const snap = await getDoc(refUser);
+    if (!snap.exists()) {
+      await setDoc(refUser, {
+        uid: user.uid,
+        nombre: user.displayName || "",
+        email: user.email,
+        foto: user.photoURL || "",
+        creadoEn: new Date().toISOString()
+      });
+    }
+  }
+
+  // Mostrar usuario en navbar con funcionalidades
+  function pintarUsuarioEnNavbar(user) {
+    if (document.getElementById("userInfo")) return;
+
+    const foto = user.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.displayName || user.email)}`;
+    const nombre = user.displayName || user.email;
+
+    const li = document.createElement("li");
+    li.className = "nav-item dropdown ms-3 d-flex align-items-center";
+    li.id = "userInfo";
+    li.innerHTML = `
+      <!-- Ícono del carrito con burbuja -->
+      <button class="btn btn-link position-relative me-3 text-white" id="btnCarritoIcono" title="Ver carrito">
+        <i class="bi bi-cart3 fs-5 text-white"></i>
+        <span id="contadorCarrito" 
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          0
+        </span>
+      </button>
+
+      <!-- Usuario con menú -->
+      <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+        <img src="${foto}" class="rounded-circle me-2" width="32" height="32">
+        <span class="text-white">${nombre}</span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#" id="verPedidosBtn">📦 Mis pedidos</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-danger" href="#" id="cerrarSesionBtn">Salir</a></li>
+      </ul>`;
+
+    navbarRight.appendChild(li);
+
+    // Eventos
+    document.getElementById("cerrarSesionBtn").addEventListener("click", async e => {
+      e.preventDefault();
+      await signOut(auth);
+    });
+
+    document.getElementById("verPedidosBtn").addEventListener("click", e => {
+      e.preventDefault();
+      mostrarPedidosModal();
+    });
+
+    document.getElementById("btnCarritoIcono").addEventListener("click", e => {
+      e.preventDefault();
+      mostrarCarritoModal();
+    });
+
+    actualizarBurbujaCarrito();
+  }
+
+  // Eventos de autenticación
+  googleBtn.addEventListener("click", async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      await crearUsuarioSiNoExiste(result.user);
+      cerrarModalAuth();
+    } catch (err) {
+      console.error("Google error:", err);
+    }
+  });
+
+  registerForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    try {
+      const email = regEmail.value.trim();
+      const pass = regPassword.value.trim();
+      const nombre = regNombre.value.trim();
+
+      const cred = await createUserWithEmailAndPassword(auth, email, pass);
+      await updateProfile(cred.user, { displayName: nombre });
+      await crearUsuarioSiNoExiste(cred.user);
+
+      alert("Registro exitoso");
+      cerrarModalAuth();
+    } catch (err) {
+      console.error(err);
+      alert("Error al registrar");
+    }
+  });
+
+  loginForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    try {
+      const email = loginEmail.value.trim();
+      const pass = loginPassword.value.trim();
+
+      await signInWithEmailAndPassword(auth, email, pass);
+      cerrarModalAuth();
+    } catch (err) {
+      console.error(err);
+      alert("Credenciales incorrectas");
+    }
+  });
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      btnAuthContainer.style.display = "none";
+      limpiarUsuarioNavbar();
+      pintarUsuarioEnNavbar(user);
+    } else {
+      btnAuthContainer.style.display = "block";
+      limpiarUsuarioNavbar();
+    }
+  });
+
+  // Inicializar burbuja del carrito
+  actualizarBurbujaCarrito();
+</script>
+</body>
+</html>
